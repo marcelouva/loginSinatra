@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylelogin' type='text/css'>
+<link rel='stylesheet' type='text/css' href='/stylelogin.css'/>
+
+
+
+
+<div class="login">
+  <div class="login-header">
+    <h1>Login</h1>
+  </div>
+  <div class="login-form">
+  <form action='/adduser' method='POST'>
+     <h3>Usuario:</h3>
+    <input type="text" name='usuario' placeholder="Usuario"/><br>
+    <h3>Password:</h3>
+    <input type="password" name='clave' placeholder="Contraseña"/>
+       <input type="submit" value="Guardar" class="login-button"/>
+    <br>          
+ </form>
+ <b>
+ <h3>
+ Ya tenés una cuenta creada?
+ </h3>
+ </b>
+
+<form action='/login' method='POST'>
+     <h3>Usuario:</h3>
+    <input type="text" name='usuario' placeholder="Usuario"/><br>
+    <h3>Password:</h3>
+    <input type="password" name='clave' placeholder="Contraseña"/>
+    <br>
+    <input type="submit" value="login" class="login-button"/>
+    <br>
+             
+ </form>
+
+<form action='/logout' method='POST'>
+    <br>
+    <input type="submit" value="Salir" class="login-button"/>
+    <br>
+             
+ </form>
+    
+  </div>
+</div>
+
+
+</html>
+
+

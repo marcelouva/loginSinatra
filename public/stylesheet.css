@@ -1,0 +1,367 @@
+/* Every page standard background */
+body { 
+  background-color: #333;
+}
+
+
+/* Main logo style */
+#logo{
+  position:relative;
+  padding: 3px;
+  height: 100px;
+  width: 100px;
+}
+
+
+/* Main title showed in banner */
+#mainTitle{
+  position: relative;
+  left: 16px;
+}
+
+
+/* Banner */
+.mainNav {
+  background-image: url(/banner.png);
+  border: 3px solid #f44336; 
+}
+
+
+/*Small navigation bar*/
+.topNav {
+  overflow: hidden;
+  background-color: #f44336;    
+}
+
+.topNav a {
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition-duration: 0.3s;
+}
+
+.topNav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #f44336;
+  border: 1px solid white;
+}
+
+
+/*Label Style*/
+.label {
+  font-size: 25px;
+  color: white;
+}
+
+
+/*Input Styles*/
+input[type='text']{
+  padding: 12px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border-radius: 2px;
+  border: none;
+  background: #f7736a93;
+  color: white;
+}
+
+input[type='text']:focus{
+  background: #f7736a56;
+  outline: none;
+}
+
+::placeholder{
+  color: white;
+  opacity: 0.5;
+}
+
+
+/*Button style*/
+.button {
+  background-color: #f44336;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.3s;
+}
+
+.button:hover{
+  background-color: white;
+  color: #f44336;
+  cursor: pointer;
+}
+
+
+/*Questions Styles*/
+.quesTitle{
+  padding: 10px;
+  width: 35%;
+  background-color: #f1574ca6;
+  font-size: 25px;
+  color:rgb(255, 255, 255);
+  border-radius: 15px;
+  overflow-wrap: break-word;
+}
+
+.qDesc{
+  font-size: 20px;
+  color:rgb(255, 255, 255)
+}
+
+
+/*Options Style*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 21px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+}
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  height: 14px;
+  width: 14px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #f44336;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+/* Resume style */
+.resume dt {
+  background-color: #f54d41a6;
+  border-left-style: solid;
+  border-left-color: #f44336;
+  border-left-width: 15px;
+  font-size: 20px;
+  color: white;
+  padding: 1px;
+  margin-left: 20px;
+}
+
+.resume dt:hover{
+  background-color: #f44336;
+  transition-duration: 0.3s;
+}
+
+.resume dl {
+  width: 75%;
+  text-decoration: none;
+  margin-left: 170px;
+}
+
+.resume dd {
+  background-color: #f54d4185;
+  border-left-style: solid;
+  border-left-color: #f44336;
+  border-left-width: 15px;
+  color: white;
+  font-size: 19;
+  padding: 1px;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.resume a {
+  margin-left: 5px;
+  color: #eeeeee;
+}
+
+
+/* Survey list style */
+.surveys ul {
+  background-color: #f54d41a6;
+  width: 250px;
+  border-left-style: solid;
+  border-left-color: #f44336;
+  border-left-width: 15px;
+  color: white;
+  padding: 0px;
+  margin-left: 20px;
+}
+
+.surveys a {
+  font-size: 20px;
+  color: white;
+}
+
+.surveys li {
+  transition-duration: 0.3s;
+  overflow-wrap: break-word;
+  padding-left: 20px;
+  list-style-position: inside;
+}
+
+
+/* Careers list style */
+.careers ul {
+  background-color: #f54d41a6;
+  width: 230px;
+  border-left-style: solid;
+  border-left-color: #f44336;
+  border-left-width: 15px;
+  color: white;
+  padding: 0px;
+  margin-left: 20px;
+}
+
+.careers a {
+  font-size: 17px;
+  color: white;
+}
+
+.careers li {
+  transition-duration: 0.3s;
+  overflow-wrap: break-word;
+  padding-left: 20px;
+  list-style-position: inside;
+}
+
+.careers li:hover {
+  background-color: #f44336;
+  overflow: hidden;
+  text-decoration: none;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+
+/* Careers page style */
+.careerPage {
+  padding: auto;
+  margin: auto;
+  text-align: centre;
+}
+
+.careerPage img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #f44336;
+  padding: 10px;
+  background-color: #f7736a93;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.careerPage h2 {
+  color: white;
+  text-align: center;
+}
+
+
+/* Finish Page Style */
+.finishText {
+  background-color: #f54d41a6;
+  border: 3px solid #f44336;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  padding: auto;
+  margin: auto;
+  width: 25%;
+}
+
+.finishText a {
+  color: white;
+  transition-duration: 0.3s;
+}
+
+.finishText a:hover {
+  background-color: #f44336;
+}
+
+.finishText p {
+  color: white;
+}
+
+
+/* No Question page style */
+.nq {
+  background-color: #f54d41a6;
+  border: 3px solid #f44336;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  padding: auto;
+  margin: auto;
+}
+
+.nq p {
+  color: white;
+  text-align: center;
+}
+
+.nq img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+
+/*Nothing page style*/
+.nothing h1 {
+  color: white;
+}
+
+.nothing img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #f44336;
+  padding: 10px;
+  background-color: #f7736a93;
+  border-radius: 10px;
+  width: 50%;
+}
